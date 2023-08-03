@@ -13,7 +13,6 @@ class ScopeInlineFormset(BaseInlineFormSet):
         count = 0
         for form in self.forms:
             if 'is_main' in form.cleaned_data:
-
                 is_main = form.cleaned_data['is_main']
                 if is_main and count < 1:
                     count += 1
